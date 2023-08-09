@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="signupresult.html" method="get" enctype="multipart/form-data">
+        <div>
+            <label for="username">User Name</label>
+            <input placeholder="Enter your Name" name="username" id="username" type="text" min="3" max="5" required>
+        </div>
+        <div>
+            <label for="email">Enter Your Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input placeholder="Enter your Password" maxlength="8" name="password" id="password" type="password" required>
+        </div>
+        <div>
+            <label for="yearofbirth">Year of Birth</label>
+            <input type="date" name="dob" id="yearofbirth" min="2000-01-01">
+        </div>
+        <div>
+            <label for="emailalert">Email Alert</label>
+            <input type="checkbox" name="emailalert" id="emailalert">
+        </div>
+        <div>
+            <label for="smsalert">Sms Alter</label>
+            <input type="checkbox" name="smsalert" id="smsalert">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="female" id="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <select name="state" id="state">
+                <option value="None">None</option>
+                <option value="tamilnadu">TamilNadu</option>
+                <option value="andhra">AndhraPradesh</option>
+                <option value="tamilnadu">Bengaloure</option>
+                <option value="Delhi" label="Delhi"></option>
+                <option value="kerala" label="Kearla"></option>
+            </select>
+        </div>
+        <div>
+            <label for="file">Upload Your File</label>
+            <input type="file">
+        </div>
+        <!-- <input type="image" src="https://stock.adobe.com/search?k=submit+button">-->
+        <button type="submit">Sign Up</button>
+        <button type="reset">Reset</button> 
+    </form>
+</body>
+</html>
